@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnostore</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>TECNOSTORE</h1>
+    </header>
+
+    <main>
+        <h2>¿En qué consiste?</h2>
+        <h3>
+            Tecnostore es una aplicación móvil que tiene como principal función la venta de productos tecnológicos. 
+            Para lograr todo lo que esto conlleva, hemos implementado un sistema que permitirá: visualizar, agregar y modificar productos según lo estime el administrador, 
+            mientras que el cliente podrá únicamente visualizar y comprar los artículos.
+        </h3>
+
+        <button class="action-btn">Explorar Productos</button>
+
+        <!-- Carrusel de imágenes -->
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="{% static 'img/teclado5.jpg' %}" alt="Teclado">
+                <img src="{% static 'img/mouse1.jpg' %}" alt="Mouse">
+                <img src="{% static 'img/silla2.jpg' %}" alt="Silla">
+                <img src="{% static 'img/pc1.jpg' %}" alt="PC">
+                <img src="{% static 'img/audifono1.jpg' %}" alt="Audífono">
+            </div>
+            <div class="carousel-buttons">
+                <button class="prev-btn">&#10094;</button>
+                <button class="next-btn">&#10095;</button>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <img src="{% static 'tecnostore/img/logo.jpeg' %}" alt="Logo Tecnostore">
+        <p>&copy; 2024 Tecnostore. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="{% static 'tecnostore/js/java.js' %}">
+       
+    </script>
+    
+    
+</body>
+</html>
